@@ -76,18 +76,6 @@ export default function Projects() {
             />
           ))}
         </div>
-        {projects[0]?.developmentNotes && (
-          <div className="mt-8 rounded-lg bg-white p-6 shadow-sm">
-            <h2 className="mb-4 text-2xl font-semibold text-gray-900">
-              {t.projects.developmentNotes}
-            </h2>
-            <ul className="list-inside list-disc space-y-2 text-gray-700">
-              {projects[0].developmentNotes.map((note, index) => (
-                <li key={index}>{note}</li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
     </main>
   );
